@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpg";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -47,7 +47,7 @@ const Navbar = () => {
         <Link to={"/"}>
           <div className="item flex items-center gap-3 p-4 rounded-lg shadow-md bg-white hover:bg-gray-100 transition-all duration-300">
             <img
-              src={facebook}
+              src={logo}
               alt="Facebook"
               className="w-12 h-12 rounded-full"
             />

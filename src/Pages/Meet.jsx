@@ -19,7 +19,7 @@ const founders = [
     {
       name: "Josh Graphics",
       role: "Product/Graphics Designer",
-      image: "/assets/emily.jpg",
+      image: "/assets/Josh.jpg",
     },
     {
       name: "Nwaneri DC",
@@ -29,7 +29,7 @@ const founders = [
     {
       name: "Purity Olachi",
       role: "Social Media Manager",
-      image: "/assets/emily.jpg",
+      image: "/assets/ola.jpg",
     },
   ];
   
