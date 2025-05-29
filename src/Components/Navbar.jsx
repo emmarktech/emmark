@@ -134,12 +134,21 @@ const Navbar = () => {
           >
             ABOUT US
           </NavLink>
+          <hr className="w-[90%] m-auto " />
           <NavLink
             onClick={() => setVisible(false)}
             to="/vision"
             className="p-4 hover:bg-gray-100 font-bold hover:text-blue-700"
           >
             OUR VISION
+          </NavLink>
+          <hr className="w-[90%] m-auto " />
+          <NavLink
+            onClick={() => setVisible(false)}
+            to="/team"
+            className="p-4 hover:bg-gray-100 font-bold hover:text-blue-700"
+          >
+            OUR TEAM
           </NavLink>
           <hr className="w-[90%] m-auto " />
           <NavLink
