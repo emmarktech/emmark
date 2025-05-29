@@ -39,33 +39,42 @@ const testimonials = [
     name: "James Oluwatobi",
     role: "- Junior developer",
     testimony:
-    "I can't over-emphasize it but i think Emmark-Tech has really helped me in my quest for success in the tech industry",
+      "I can't over-emphasize it but i think Emmark-Tech has really helped me in my quest for success in the tech industry",
   },
   {
     name: "Mr Ebuka",
     role: "- Fulstack developer",
     testimony:
-    "Finally I can be called a tech guy ... Thank you Emmark-Tech. More grace to your wonderful team of proffessionals!!!!",
+      "Finally I can be called a tech guy ... Thank you Emmark-Tech. More grace to your wonderful team of proffessionals!!!!",
   },
   {
     name: "Adaeze Uwakwe",
     role: "- Graphics Designer",
     testimony:
-    "After years of struggling to learn from youtube,then I finally came across Emmark-Tech and the story changed definetly for me. I'm so grateful guys..",
+      "After years of struggling to learn from youtube,then I finally came across Emmark-Tech and the story changed definetly for me. I'm so grateful guys..",
   },
   {
     name: "Elvis Chikwendu",
     role: "- CEO elionphones Nigeria",
     testimony:
-    "I've always needed to reach more customers and make more sales generally and today that's the testimony.. My E-commerce website is doing perfectly well.",
+      "I've always needed to reach more customers and make more sales generally and today that's the testimony.. My E-commerce website is doing perfectly well.",
   },
 ];
 
 const Testimonials = () => {
   return (
-    <div className="py-20 px-4 bg-white text-center ">
-      <h2 className="text-4xl font-bold mb-6 text-gray-800 ">What People Are Saying</h2>
-      <p className="text-gray-600 max-w-xl mx-auto mb-10 font-medium">A few out of so many wonderful testimonies from wonderful people <div><strong>— You too can experience the impact, whether through our tech support services or our tech mentorship programs.</strong></div>
+    <div className="py-20 px-4 bg-gradient-to-r from-black via-blue-600 to-blue-500 text-center ">
+      <h2 className="text-4xl font-bold mb-6 text-black ">
+        What People Are Saying
+      </h2>
+      <p className="text-white max-w-xl mx-auto mb-10 font-medium">
+        A few out of so many wonderful testimonies from wonderful people{" "}
+        <div>
+          <strong>
+            — You too can experience the impact, whether through our tech
+            support services or our tech mentorship programs.
+          </strong>
+        </div>
       </p>
 
       <Swiper
@@ -79,7 +88,7 @@ const Testimonials = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         modules={[Pagination, Autoplay]}
-        className="max-w-6xl mx-auto"
+        className="max-w-6xl mx-auto "
       >
         {testimonials.map((item, index) => (
           <SwiperSlide

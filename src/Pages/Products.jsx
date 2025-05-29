@@ -1,6 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import { assets } from "../asset/assets";
 
+// Animation Variants
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -14,59 +16,188 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+const fadeInProps = {
+  initial: { opacity: 0, y: 50 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.6 },
+  viewport: { once: true },
 };
 
 const Products = () => {
   return (
-    <motion.div 
-      className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 bg-gray-50 text-gray-800"
-      variants={container}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-    >
-      <motion.h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 leading-tight" variants={item}>
-        Why Emmark-Tech?
-      </motion.h2>
+    <div>
+      {/* ======= Why Choose Emmark-Tech Section ======= */}
+      <motion.section
+        className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 text-gray-800 bg-gradient-to-r from-blue-500 to-black clip-diagonal"
+        variants={container}
+        {...fadeInProps}
+      >
+        <motion.h2
+          className="text-3xl sm:text-4xl font-bold text-center mb-6 leading-tight text-white"
+          variants={item}
+        >
+          Why Choose <span className="text-blue-600">Emmark-Tech</span>?
+        </motion.h2>
 
-      <div className="grid gap-12 md:grid-cols-2">
-        {/* Business Owners Section */}
-        <motion.div className="bg-white p-6 rounded-2xl shadow-md" variants={item}>
-          <h3 className="text-xl font-semibold mb-4 text-indigo-600">For Business Owners</h3>
-          <p className="text-base leading-relaxed">
-            <strong>Did you know?</strong> 
-            <br />
-            93% of online experiences start with a search engine, and 75% of users never scroll past the first page. 
-            Yet, many businesses still rely on outdated strategies. At Emmark-Tech, we help you build modern, scalable, and optimized web platforms that don’t just exist — they perform.
-            <br /><br />
-            <p className='font-bold text-gray-700'>We offer:</p>
-            <ul className="list-disc list-inside mt-3 text-x text-gray-700">
-              <li>Custom website & app development</li>
-              <li>SEO & online visibility optimization</li>
-              <li>Tech consultations that fuel growth</li>
-            </ul>
-          </p>
-        </motion.div>
+        <motion.p
+          className="font-bold text-center mb-12 text-white leading-relaxed max-w-4xl mx-auto"
+          variants={item}
+        >
+          <span className="text-blue-300">Emmark-Tech</span> is a leading
+          technology consulting firm in Africa. We provide cutting-edge
+          solutions for your business and perfect training opportunities for
+          tech enthusiasts.
+        </motion.p>
 
-        {/* Learners Section */}
-        <motion.div className="bg-white p-6 rounded-2xl shadow-md" variants={item}>
-          <h3 className="text-xl font-semibold mb-4 text-green-600">For Intending Learners</h3>
-          <p className="text-base leading-relaxed">
-            <strong>Did you know?</strong> 
-            <br />
-            The global tech talent shortage is projected to reach over 85 million unfilled jobs by 2030. Tech isn’t just the future — it’s the now. Whether you're just starting or switching careers, learning to code or design could be the most profitable decision you’ll make.
-            <br /><br />
-            <p  className='font-bold text-gray-700'>At Emmark-Tech, you’ll:</p>
-            <ul className="list-disc list-inside mt-3 text-x text-gray-700">
-              <li>Learn practical tech skills — not theory</li>
-              <li>Get mentored by industry professionals</li>
-              <li>Build real-world projects and portfolios</li>
+        <div className="grid gap-12 md:grid-cols-2">
+          {/* ======= Business Owners ======= */}
+          <motion.article
+            className="bg-blue-100 hover:bg-black p-6 rounded-2xl shadow-md transition-colors duration-300 hover:animate-shake"
+            variants={item}
+          >
+            <h3 className="text-xl font-bold mb-4 text-indigo-600">
+              For Business Owners
+            </h3>
+            <div className="text-base leading-relaxed text-gray-700 hover:text-white transition-colors duration-300">
+              <strong>Did you know?</strong>
+              <br />
+              93% of online experiences start with a search engine, and 75% of
+              users never scroll past the first page. Yet, many businesses still
+              rely on outdated strategies. At Emmark-Tech, we help you build
+              modern, scalable, and optimized web platforms that don’t just
+              exist — they perform.
+              <div className="mt-4 font-bold">We offer:</div>
+              <ul className="list-disc list-inside mt-2">
+                <li>Custom website & app development</li>
+                <li>SEO & online visibility optimization</li>
+                <li>Tech consultations that fuel growth</li>
+              </ul>
+            </div>
+          </motion.article>
+
+          {/* ======= Intending Learners ======= */}
+          <motion.article
+            className="bg-blue-100 hover:bg-blue-700 p-6 rounded-2xl shadow-md transition-colors duration-300 hover:animate-shake"
+            variants={item}
+          >
+            <h3 className="text-xl font-bold mb-4 text-green-600">
+              For Intending Learners
+            </h3>
+            <div className="text-base leading-relaxed text-gray-700 hover:text-white transition-colors duration-300">
+              <strong>Did you know?</strong>
+              <br />
+              The global tech talent shortage is projected to reach over 85
+              million unfilled jobs by 2030. Tech isn’t just the future — it’s
+              the now. Whether you're just starting or switching careers,
+              learning to code or design could be the most profitable decision
+              you’ll make.
+              <div className="mt-4 font-bold">At Emmark-Tech, you’ll:</div>
+              <ul className="list-disc list-inside mt-2">
+                <li>Learn practical tech skills — not theory</li>
+                <li>Get mentored by industry professionals</li>
+                <li>Build real-world projects and portfolios</li>
+              </ul>
+            </div>
+          </motion.article>
+        </div>
+      </motion.section>
+
+      {/* ======= About Section ======= */}
+      <div className="bg-gradient-to-r from-black to-blue-500 px-4 sm:px-8 md:px-16 lg:px-24 py-16 text-white">
+        <motion.section
+          className="grid gap-12 md:grid-cols-2"
+          variants={container}
+          {...fadeInProps}
+        >
+          {/* ======= About Text ======= */}
+          <motion.div variants={item}>
+            <h2 className="text-3xl font-bold mb-6 text-white">
+              About Emmark Tech
+            </h2>
+            <p className="mb-4">
+              Welcome to Emmark Tech — your all-in-one hub for modern digital
+              solutions, innovation, and technology training.
+            </p>
+            <p>
+              At Emmark Tech, we are committed to bridging the global digital
+              divide by providing scalable software, robust IT infrastructure,
+              and hands-on tech training programs. Our mission is to empower
+              individuals, startups, and enterprises through technology that
+              transforms businesses and careers.
+              <br />
+              <br />
+              With a visionary team of professionals, we deliver end-to-end tech
+              services including software development, cloud integration, IT
+              consulting, product engineering, and full-stack training. Our
+              approach is simple — deliver real results with innovation,
+              integrity, and impact.
+              <br />
+              <br />
+              As a rising tech force in Africa with a global mindset, we aim to
+              build digital products that matter and develop talents that shape
+              the future.
+            </p>
+          </motion.div>
+
+          {/* ======= About Image ======= */}
+          <motion.div variants={item}>
+            <img
+              src={assets.About}
+              alt="About Emmark Tech"
+              className="w-full h-full max-h-[400px] object-cover rounded-xl shadow-lg"
+              loading="lazy"
+            />
+          </motion.div>
+        </motion.section>
+
+        {/* ======= Extra Text & List ======= */}
+        <div className="grid gap-12 md:grid-cols-2 mt-5 max-w-7xl mx-auto text-justify">
+          <div>
+            <p>
+              Our founding team brings a wealth of expertise across multiple
+              disciplines including software engineering, cybersecurity, cloud
+              computing, UI/UX design, business development, and more. We don't
+              just build digital tools — we create experiences, streamline
+              systems, and inspire innovation.
+              <br />
+              <br />
+              Whether you’re an aspiring tech talent or a growing business,
+              Emmark Tech provides the right tools, training, and solutions to
+              help you thrive in today's fast-evolving tech world.
+            </p>
+          </div>
+
+          <div className="flex-1 rounded-lg transition-all duration-300">
+            <ul className="list-disc list-inside space-y-2">
+              <li className="text-white">
+                Gain hands-on, job-ready skills with real-world projects.
+              </li>
+              <li className="text-white">
+                Work with a forward-thinking team passionate about tech
+                innovation.
+              </li>
+              <li className="text-white">
+                Access custom-built software solutions tailored to your business
+                goals.
+              </li>
+              <li className="text-white">
+                Join a community of global learners and digital creators.
+              </li>
+              <li className="text-white">
+                Future-proof your skills and solutions in a tech-driven economy.
+              </li>
             </ul>
-          </p>
-        </motion.div>
+          </div>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
