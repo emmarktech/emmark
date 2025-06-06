@@ -1,80 +1,98 @@
 import React, { useContext, useState } from "react";
-import { Link, Navigate, NavLink } from "react-router-dom";
+import { Link, Navigate, NavLink, useLocation } from "react-router-dom";
 import { assets } from "../asset/assets";
 
 // import './style.css'
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
+
+  const location = useLocation();
+const isAboutActive = ["/about", "/team", "/vision"].some(path =>
+  location.pathname.startsWith(path)
+);
+
+
   return (
-    <div className="flex items-center justify-between py-4 font-medium relative z-50  px-4 sm:px-[5vw] md:px-[7vw] lg:px-[3vw] sticky top-0 bg-gradient-to-r from-black via-blue-500 to-white shadow-md">
+    <div className="flex items-center justify-between py-4 font-medium relative z-50  px-4 sm:px-[5vw] md:px-[7vw] lg:px-[3vw] sticky top-0 bg-gradient-to-r from-black via-black to-white shadow-md">
       <Link to="/">
-        <img src={assets.logo} className="w-36 h-10" alt="Company Logo" />
+        <img src={assets.logo} className="w-full h-10" alt="Company Logo" />
       </Link>
 
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700 ">
         <NavLink
-          className="flex flex-col items-center text-black font-bold hover:text-white no-underline"
+          className="flex flex-col items-center text-white font-bold hover:text-blue-600 no-underline"
           style={{ textDecoration: "none" }}
           to="/"
         >
           <p>HOME</p>
-          <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+          <hr className="w-2/4 border-none h-[1.5px] bg-white hidden" />
         </NavLink>
-        <div
-          className="flex flex-col items-center text-black cursor-pointer font-bold hover:text-white no-underline"
-          style={{ textDecoration: "none" }}
-        >
-          <div className="group relative">
-            <p>ABOUT <span className=" text-sm">+</span></p>
+       
+       {/* ----------------- about -------------------------- */}
+       <div
+  className={`flex flex-col items-center text-white cursor-pointer font-bold hover:text-blue-600 no-underline ${
+    isAboutActive ? "text-blue-600" : ""
+  }`}
+>
+  <NavLink className="group relative">
+    <NavLink>ABOUT <span className=" text-sm">+</span></NavLink>
 
-            {/* dropdown */}
+    {/* Dropdown */}
+    <div
+      className="absolute left-0 hidden group-hover:block bg-blue-100 rounded shadow-md  p-3"
+      style={{ marginLeft: "auto", marginRight: "auto", width: "20vh" }}
+    >
+      <NavLink
+        to="/about"
+        className="cursor-pointer hover:text-blue-600 py-1 px-1 text-black"
+      >
+        Who We Are
+      </NavLink>
+      <hr />
+      <NavLink to="/team" className="cursor-pointer hover:text-blue-600 text-black py-1 px-1">
+        Our Team
+      </NavLink>
+      <hr />
+      <NavLink to="/vision" className="cursor-pointer hover:text-blue-600 text-black py-1 px-1">
+        Our Vision
+      </NavLink>
+    </div>
+  </NavLink>
 
-            <div
-              className="absolute left-0 hidden group-hover:block bg-blue-100 rounded shadow-md  p-3"
-              style={{ marginLeft: "auto", marginRight: "auto", width: "20vh" }}
-            >
-              <NavLink
-                to="/about"
-                className="cursor-pointer hover:text-white py-1 px-1 text-blue-600"
-              >
-                Who We Are
-              </NavLink>
-              <hr />
-              <NavLink to="/team" className="cursor-pointer hover:text-white text-blue-600 py-1 px-1">
-                Our Team
-              </NavLink>
-              <hr />
-              <NavLink to="/vision" className="cursor-pointer hover:text-white text-blue-600 py-1 px-1">
-                Our Vision
-              </NavLink>
-            </div>
-          </div>
-          <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
-        </div>
+  {/* Active HR */}
+  <hr
+    className={`w-2/4 border-none h-[1.5px] bg-white ${
+      isAboutActive ? "block" : "hidden"
+    }`}
+  />
+</div>
+
+       {/* ------------------ about.ends ------------------------------------- */}
+
         <NavLink
-          className="flex flex-col items-center text-black  font-bold hover:text-white no-underline"
+          className="flex flex-col items-center text-white  font-bold hover:text-blue-600 no-underline"
           style={{ textDecoration: "none" }}
           to="/services"
         >
           <p>PRODUCTS & SERVICES</p>
-          <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+          <hr className="w-2/4 border-none h-[1.5px] bg-white hidden" />
         </NavLink>
         <NavLink
-          className="flex flex-col items-center text-black  font-bold hover:text-white no-underline"
+          className="flex flex-col items-center text-white  font-bold hover:text-blue-600 no-underline"
           style={{ textDecoration: "none" }}
           to="/partners"
         >
           <li>PARTNERS</li>
-          <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+          <hr className="w-2/4 border-none h-[1.5px] bg-white hidden" />
         </NavLink>
         <NavLink
-          className="flex flex-col items-center text-black  font-bold hover:text-white no-underline"
+          className="flex flex-col items-center text-white  font-bold hover:text-blue-600 no-underline"
           style={{ textDecoration: "none" }}
           to="/clients"
         >
           <li>CLIENTS</li>
-          <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+          <hr className="w-2/4 border-none h-[1.5px] bg-white hidden" />
         </NavLink>
         {/* <NavLink 
             className='flex flex-col items-center text-gray-700  font-bold hover:text-blue-700 no-underline' 

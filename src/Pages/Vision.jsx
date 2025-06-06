@@ -88,7 +88,7 @@ const Vision = () => {
 
   return (
     <div>
-      <div className="bg-gradient-to-r from-black via-blue-600 to-blue-500 pb-10">
+      <div className="bg-gray-100 pb-20">
         <div style={sectionStyle}>
           <div style={overlayStyle}></div>
           <motion.div
@@ -113,8 +113,8 @@ const Vision = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-white text-center">
-            What Drives <span className="text-blue-300">Our Vision</span>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-black text-center">
+            What Drives <span className="text-blue-600">Our Vision</span>
           </h2>
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {visionPoints.map((point, index) => (

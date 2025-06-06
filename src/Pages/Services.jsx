@@ -166,7 +166,7 @@ const Services = () => {
 
   return (
     <div>
-      <div className=" bg-gradient-to-r from-black via-blue-600 to-blue-500">
+      <div className="bg-gray-100">
         {/* ------------------------------- hero -------------------------------- */}
         <div style={sectionStyle}>
           <div style={overlayStyle}></div>
@@ -215,10 +215,10 @@ const Services = () => {
           {/* Client Services */}
           <div className="mb-16 pt-10">
             <motion.h3
-              className="text-2xl font-bold mb-6 text-white"
+              className="text-2xl font-bold mb-6 text-black   border rounded-xl p-3 w-[35vh]" style={{borderTop:'3px solid blue', borderLeft:'3px solid blue'}}
               variants={item}
             >
-              For Businesses : <hr className="w-[26vh] mt-2 " />
+              For Businesses :
             </motion.h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {clientServices.map((service, index) => (
@@ -242,10 +242,10 @@ const Services = () => {
           {/* Training Services */}
           <div>
             <motion.h3
-              className="text-2xl font-bold mb-6 text-white"
+              className="text-2xl font-bold mb-6 text-black  border rounded-xl p-3 w-[35vh]" style={{borderBottom:'3px solid blue', borderRight:'3px solid blue'}}
               variants={item}
             >
-              Learn With Us : <hr className="w-[26vh] mt-2 " />
+              Learn With Us :
             </motion.h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {trainingServices.map((service, index) => (

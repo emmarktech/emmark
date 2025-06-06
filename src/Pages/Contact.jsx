@@ -83,7 +83,7 @@ const Contact = () => {
   return (
     <div>
       <ToastContainer position="top-right" autoClose={5000} />
-      <div className="bg-gradient-to-r from-black via-blue-600 to-blue-500">
+      <div className="bg-gray-100">
         {/* Hero Section */}
         <motion.div variants={fadeIn} initial="hidden" animate="show">
           <div
@@ -99,7 +99,7 @@ const Contact = () => {
             >
               <div className="flex justify-center gap-4 flex-wrap pt-5 text-white font-medium pb-20">
                 <a
-                  href="https://linkedin.com/in/emmarktech"
+                  href="https://www.linkedin.com/company/emmarklabs/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 border rounded-xl py-3 px-6 bg-white/10 backdrop-blur-md transition"
@@ -136,15 +136,15 @@ const Contact = () => {
             animate="show"
             className="md:w-1/2 space-y-5"
           >
-            <h2 className="text-3xl font-bold mb-2">
+            <h2 className="text-3xl font-bold mb-2 text-black">
               Book Your Free Consultation Today!
             </h2>
-            <p>
+            <p className="text-gray-700 font-bold">
               Schedule a 20-minute consultation session with our sales team and
               let’s get you started. We’re excited to hear about your business
               and the amazing things you do.
             </p>
-            <p>
+            <p className="text-gray-700 font-bold">
               Discuss your project with us, explore our process, subscription
               plans, and see what makes us unique. Discover new possibilities
               for growth with Emmark Tech.
@@ -183,7 +183,7 @@ const Contact = () => {
                     duration: 0.5,
                     ease: "easeOut",
                   }}
-                  className="flex items-center gap-3 border border-gray-300 bg-white/10 backdrop-blur-md text-white rounded-xl p-3 hover:scale-[1.02] hover:bg-white/20 transition duration-300"
+                  className="flex items-center gap-3 border border-gray-300 bg-white/10 backdrop-blur-md text-black rounded-xl p-3 hover:scale-[1.02] hover:bg-white/20 transition duration-300"
                 >
                   {item.icon}
                   {item.link ? (
@@ -208,7 +208,7 @@ const Contact = () => {
             variants={fadeIn}
             initial="hidden"
             animate="show"
-            className="bg-white/10 backdrop-blur-md text-white rounded-xl shadow-lg p-8 md:w-1/2"
+            className="bg-white/10 backdrop-blur-md text-black rounded-xl shadow-lg p-8 md:w-1/2"
           >
             <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">

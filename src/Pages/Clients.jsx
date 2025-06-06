@@ -99,7 +99,7 @@ const Clients = () => {
 
   return (
     <div>
-      <div className="bg-gradient-to-r from-black via-blue-600 to-blue-500">
+      <div className="bg-gray-100">
         {/* Hero Section */}
         <div style={sectionStyle}>
           <div style={overlayStyle}></div>
@@ -160,10 +160,10 @@ const Clients = () => {
             {/* <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
               Our Clients
             </h1> */}
-            <p className='py-10 text-white text-md font-semibold  px-4 sm:px-8 md:px-16 lg:px-24' style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
+            <p className='py-10 text-gray-800 text-md font-semibold  px-4 sm:px-8 md:px-16 lg:px-24' style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
               For every of the mentioned industry sectors, we provide suiting tech solutions that make global impact through professional and proper implementation of skills.
 
-             <p className='pt-10'> <Link to='/contact' className='font-bold text-xl text-blue-600 border rounded-xl p-2'>Contact Us</Link>  today for a tech experience that lasts !</p>
+             <p className='pt-10'> <Link to='/contact' className='font-bold text-xl text-blue-600 border rounded-xl p-2' style={{border:'1px solid '}}>Contact Us</Link>  today for a tech experience that lasts !</p>
             </p>
           </motion.div>
         </div>

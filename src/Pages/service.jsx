@@ -40,7 +40,7 @@ const services = [
 
 const Service = () => {
   return (
-    <div className="py-20 px-4 sm:px-8 md:px-16 lg:px-24 bg-gradient-to-r from-black via-blue-600 to-blue-500 text-white">
+    <div className="py-20 px-4 sm:px-8 md:px-16 lg:px-24  text-white">
       <motion.div
         className="max-w-6xl mx-auto"
         variants={containerVariants}
@@ -48,7 +48,7 @@ const Service = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-black mb-12">
           Our Core <span className="text-blue-300">Tech Services</span>
         </h2>
 

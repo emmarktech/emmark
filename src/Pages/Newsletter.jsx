@@ -13,7 +13,7 @@ const Newsletter = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
-      className="text-center py-20 px-4 bg-gradient-to-r from-blue-500 via-blue-600 to-black"
+      className="text-center py-20 px-4"
     >
       <motion.h2 
         initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ const Newsletter = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="text-white mt-2"
+        className="text-gray-600 mt-2"
       >
         Subscribe to our newsletter for expert tips, industry trends, and exclusive offers—right in your inbox.
       </motion.p>

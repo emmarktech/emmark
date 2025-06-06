@@ -84,7 +84,7 @@ const Partners = () => {
 
   return (
     <div>
-      <div className="bg-gradient-to-r from-black via-blue-600 to-blue-500">
+      <div className="bg-gray-100">
         {/* Hero Section */}
         <div style={sectionStyle}>
           <div style={overlayStyle}></div>
@@ -108,7 +108,7 @@ const Partners = () => {
 
         {/* Company Logos */}
         <div className="pt-20 pb-10 px-4 sm:px-8 md:px-16 lg:px-24">
-          <h2 className="text-white text-2xl font-bold mb-12 text-center">
+          <h2 className="text-gray-700 text-2xl font-bold mb-12 text-center">
             We proudly partner with:
           </h2>
           <motion.div

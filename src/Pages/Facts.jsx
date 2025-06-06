@@ -49,7 +49,7 @@ const item = {
 const DidYouKnow = () => {
   return (
     <div>
-    <div className="min-h-screen px-6 py-16 bg-gradient-to-r from-blue-500 via-blue-600 to-black text-black">
+    <div className="min-h-screen px-6 py-16 bg-gray-100 text-black">
       <motion.div
         variants={container}
         initial="hidden"
@@ -64,7 +64,7 @@ const DidYouKnow = () => {
         </motion.h1>
 
         <motion.p
-          className="text-center text-lg font-bold text-white mb-12 max-w-3xl mx-auto"
+          className="text-center text-lg font-bold text-gray-700 mb-12 max-w-3xl mx-auto"
           variants={item}
         >
           Here are some powerful tech facts to inspire your journey — whether you're growing a business or starting your tech career.

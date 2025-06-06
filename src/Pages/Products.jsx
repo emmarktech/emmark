@@ -35,22 +35,22 @@ const Products = () => {
     <div>
       {/* ======= Why Choose Emmark-Tech Section ======= */}
       <motion.section
-        className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 text-gray-800 bg-gradient-to-r from-blue-500 to-black clip-diagonal"
+        className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 text-gray-800 bg-white clip-diagonal"
         variants={container}
         {...fadeInProps}
       >
         <motion.h2
-          className="text-3xl sm:text-4xl font-bold text-center mb-6 leading-tight text-white"
+          className="text-3xl sm:text-4xl font-bold text-center mb-6 leading-tight text-black"
           variants={item}
         >
           Why Choose <span className="text-blue-600">Emmark-Tech</span>?
         </motion.h2>
 
         <motion.p
-          className="font-bold text-center mb-12 text-white leading-relaxed max-w-4xl mx-auto"
+          className="font-bold text-center mb-12 text-black leading-relaxed max-w-4xl mx-auto"
           variants={item}
         >
-          <span className="text-blue-300">Emmark-Tech</span> is a leading
+          <span className="text-blue-600">Emmark-Tech</span> is a leading
           technology consulting firm in Africa. We provide cutting-edge
           solutions for your business and perfect training opportunities for
           tech enthusiasts.
@@ -59,10 +59,11 @@ const Products = () => {
         <div className="grid gap-12 md:grid-cols-2">
           {/* ======= Business Owners ======= */}
           <motion.article
-            className="bg-blue-100 hover:bg-black p-6 rounded-2xl shadow-md transition-colors duration-300 hover:animate-shake"
+            className="bg-white hover:bg-blue-400 p-6 rounded-2xl shadow-md transition-colors duration-300 hover:animate-shake"
             variants={item}
+            style={{borderTop:'3px solid blue', borderLeft:'3px solid blue'}}
           >
-            <h3 className="text-xl font-bold mb-4 text-indigo-600">
+            <h3 className="text-xl font-bold mb-4 text-indigo-700">
               For Business Owners
             </h3>
             <div className="text-base leading-relaxed text-gray-700 hover:text-white transition-colors duration-300">
@@ -84,10 +85,11 @@ const Products = () => {
 
           {/* ======= Intending Learners ======= */}
           <motion.article
-            className="bg-blue-100 hover:bg-blue-700 p-6 rounded-2xl shadow-md transition-colors duration-300 hover:animate-shake"
+            className="bg-white hover:bg-blue-400 p-6 rounded-2xl shadow-md transition-colors duration-300 hover:animate-shake"
             variants={item}
+            style={{borderBottom:'3px solid blue', borderRight:'3px solid blue'}}
           >
-            <h3 className="text-xl font-bold mb-4 text-green-600">
+            <h3 className="text-xl font-bold mb-4 text-green-700">
               For Intending Learners
             </h3>
             <div className="text-base leading-relaxed text-gray-700 hover:text-white transition-colors duration-300">
@@ -110,7 +112,7 @@ const Products = () => {
       </motion.section>
 
       {/* ======= About Section ======= */}
-      <div className="bg-gradient-to-r from-black to-blue-500 px-4 sm:px-8 md:px-16 lg:px-24 py-16 text-white">
+      <div className="bg-gray-100 px-4 sm:px-8 md:px-16 lg:px-24 py-16 text-gray-600 text-lg">
         <motion.section
           className="grid gap-12 md:grid-cols-2"
           variants={container}
@@ -118,21 +120,24 @@ const Products = () => {
         >
           {/* ======= About Text ======= */}
           <motion.div variants={item}>
-            <h2 className="text-3xl font-bold mb-6 text-white">
+            <h2 className="text-3xl font-bold mb-3 text-black">
               About Emmark Tech
             </h2>
+            <div className="rounded-xl p-2" style={{borderLeft:'3px solid blue'}}>
             <p className="mb-4">
               Welcome to Emmark Tech — your all-in-one hub for modern digital
               solutions, innovation, and technology training.
             </p>
             <p>
-              At Emmark Tech, we are committed to bridging the global digital
+              We are a fast rising tech force in Africa with a global mindset, aiming to
+              build digital products that matter and develop talents that shape
+              the future.we are committed to bridging the global digital
               divide by providing scalable software, robust IT infrastructure,
               and hands-on tech training programs. Our mission is to empower
               individuals, startups, and enterprises through technology that
               transforms businesses and careers.
               <br />
-              <br />
+              {/* <br /> */}
               With a visionary team of professionals, we deliver end-to-end tech
               services including software development, cloud integration, IT
               consulting, product engineering, and full-stack training. Our
@@ -140,10 +145,9 @@ const Products = () => {
               integrity, and impact.
               <br />
               <br />
-              As a rising tech force in Africa with a global mindset, we aim to
-              build digital products that matter and develop talents that shape
-              the future.
+             
             </p>
+            </div>
           </motion.div>
 
           {/* ======= About Image ======= */}
@@ -151,8 +155,9 @@ const Products = () => {
             <img
               src={assets.About}
               alt="About Emmark Tech"
-              className="w-full h-full max-h-[400px] object-cover rounded-xl shadow-lg"
+              className="w-full h-full max-h-[400px] object-cover rounded-2xl shadow-lg"
               loading="lazy"
+              style={{borderTop:'8px solid white'}}
             />
           </motion.div>
         </motion.section>
@@ -174,23 +179,23 @@ const Products = () => {
             </p>
           </div>
 
-          <div className="flex-1 rounded-lg transition-all duration-300">
+          <div className="flex-1 rounded-lg transition-all duration-300 text-gray-600">
             <ul className="list-disc list-inside space-y-2">
-              <li className="text-white">
+              <li>
                 Gain hands-on, job-ready skills with real-world projects.
               </li>
-              <li className="text-white">
+              <li>
                 Work with a forward-thinking team passionate about tech
                 innovation.
               </li>
-              <li className="text-white">
+              <li>
                 Access custom-built software solutions tailored to your business
                 goals.
               </li>
-              <li className="text-white">
+              <li>
                 Join a community of global learners and digital creators.
               </li>
-              <li className="text-white">
+              <li>
                 Future-proof your skills and solutions in a tech-driven economy.
               </li>
             </ul>

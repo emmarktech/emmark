@@ -95,7 +95,7 @@ const About = () => {
     left: 0,
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    backgroundColor: "rgba(0, 0, 0, 0.4)",
     zIndex: 1,
   };
 
@@ -111,7 +111,7 @@ const About = () => {
 
   return (
     <div>
-      <div className="bg-gradient-to-r from-black via-blue-600 to-blue-500 pb-10">
+      <div className="bg-white pb-10 text-gray-900">
         {/* Hero Section */}
         <div style={sectionStyle}>
           <div style={overlayStyle}></div>
@@ -122,7 +122,6 @@ const About = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1 }}
           >
-            {/* <h1 className="text-4xl font-bold mb-4">About Emmark Tech</h1> */}
             <p className="text-lg font-medium leading-relaxed pt-14">
               Building global solutions, empowering tech minds, and transforming
               enterprises with innovation.
@@ -132,14 +131,14 @@ const About = () => {
 
         {/* About Text */}
         <div className="py-16 px-4 sm:px-8 md:px-16 lg:px-24">
-          <h2 className="text-white text-3xl font-bold mb-10">Who We Are</h2>
-          <p className="mt-5 text-md font-semibold text-white text-justify">
+          <h2 className="text-3xl font-bold mb-10 text-gray-900">Who We Are</h2>
+          <p className="mt-5 text-md font-medium text-gray-800 text-justify">
             We are a Multi-Competency, Enterprise Transformation & Technology
             Consulting Firm. We combine expertise and capabilities across many
             industries and business functions to deliver superior value to our
             clients.
           </p>
-          <p className="mt-5 text-md font-semibold text-white text-justify">
+          <p className="mt-5 text-md font-medium text-gray-800 text-justify">
             With a deep understanding of the industries we work in, strong
             technical competencies and a flexible organization, we go the extra
             mile to deliver quality, scalable, and business-aligned solutions
@@ -155,15 +154,15 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-white">
-            Our Core <span className="text-blue-300">Tech Services</span>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-gray-900">
+            Our Core <span className="text-blue-600">Tech Services</span>
           </h2>
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="group bg-white text-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all border border-transparent hover:border-blue-500"
+                className="group bg-white text-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition-all border border-gray-100 hover:border-blue-400"
               >
                 <h3 className="text-xl font-bold mb-3 group-hover:text-blue-600 transition duration-300">
                   {service.title}
@@ -184,15 +183,15 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-white">
-            Our Core <span className="text-blue-300">Values</span>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-gray-900">
+            Our Core <span className="text-blue-600">Values</span>
           </h2>
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {coreValues.map((value, index) => (
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="group bg-white text-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all border border-transparent hover:border-blue-500"
+                className="group bg-white text-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition-all border border-gray-100 hover:border-blue-400"
               >
                 <h3 className="text-xl font-bold mb-3 group-hover:text-blue-600 transition duration-300">
                   {value.title}
@@ -205,6 +204,7 @@ const About = () => {
           </div>
         </motion.div>
       </div>
+
       <Newsletter />
       <Footer />
     </div>
