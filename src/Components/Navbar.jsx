@@ -14,7 +14,7 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
 
 
   return (
-    <div className="flex items-center justify-between py-4 font-medium relative z-50  px-4 sm:px-[5vw] md:px-[7vw] lg:px-[3vw] sticky top-0 bg-gradient-to-r from-black via-black to-white shadow-md">
+    <div className="flex items-center justify-between py-4 font-medium relative z-50  px-4 sm:px-[5vw] md:px-[7vw] lg:px-[3vw] sticky top-0 bg-black shadow-md">
       <Link to="/">
         <img src={assets.logo} className="w-full h-10" alt="Company Logo" />
       </Link>
@@ -114,14 +114,14 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
         <img
           onClick={() => setVisible(!visible)}
           src={assets.menu_icon}
-          className="w-10 cursor-pointer sm:hidden"
+          className="w-20 h-10 cursor-pointer sm:hidden"
           alt="Menu"
         />
       </div>
 
       {/* Sidebar menu for smaller screens */}
       <div
-        className={`fixed top-0 right-0 bottom-0 bg-white shadow-lg transition-transform duration-300 ${
+        className={`fixed top-0 right-0 bottom-0 bg-black shadow-lg transition-transform duration-300 ${
           visible ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -136,7 +136,7 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
             {/* <p className='text-gray-600'>Back</p> */}
           </div>
         </div>
-        <ul className="flex flex-col text-black">
+        <ul className="flex flex-col text-white">
           <NavLink
             onClick={() => setVisible(false)}
             to="/"

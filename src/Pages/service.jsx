@@ -49,7 +49,7 @@ const Service = () => {
         viewport={{ once: true }}
       >
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-black mb-12">
-          Our Core <span className="text-blue-300">Tech Services</span>
+          Our Core <span className="text-blue-600">Tech Services</span>
         </h2>
 
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -57,7 +57,7 @@ const Service = () => {
             <motion.div
               key={index}
               variants={cardVariants}
-              className="group bg-white text-gray-800 p-5 rounded-2xl shadow-lg transition-all duration-200 hover:shadow-4xl hover:scale-205 hover:border-blue-400 border border-transparent"
+              className="group bg-white text-gray-800 p-10 rounded-xl shadow-2xl transition-all duration-200 hover:shadow-4xl hover:scale-205 hover:border-blue-400 border border-transparent"
             >
               <h3 className="text-xl font-bold mb-3 text-black group-hover:text-blue-600 transition duration-300">
                 {service.title}
@@ -75,7 +75,7 @@ const Service = () => {
     whileInView="visible"
     viewport={{ once: true }}
     transition={{ duration: 0.6 }}
-    className="group p-6 sm:p-10 bg-white rounded-3xl py-16 sm:py-10 text-center shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] hover:border-blue-500 border border-transparent"
+    className="group p-12 sm:p-10 bg-white  py-16 sm:py-10 text-center shadow-2xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] hover:border-blue-500 border border-transparent"
   >
     <h2 className="text-justify text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-snug transition-colors duration-300 group-hover:text-blue-700">
       Have an IT Solution Need? <br className="hidden sm:block" /> Look No Further — Emmark Tech Has You Covered.

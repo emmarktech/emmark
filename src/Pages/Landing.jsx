@@ -31,7 +31,7 @@ const Landing = () => {
         transition={{ duration: 1 }}
         className="relative z-20 flex flex-col items-center justify-center h-full px-6 text-center text-white"
       >
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight max-w-4xl">
+        <h1 className="text-2xl md:text-6xl  font-extrabold leading-tight max-w-4xl ">
           Empowering Digital Growth with{" "}
           <span className="text-blue-600">Emmark-Tech</span>
         </h1>

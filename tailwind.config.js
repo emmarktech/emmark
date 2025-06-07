@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'], // or your chosen font
+      },
+
       keyframes: {
         shake: {
           '0%, 100%': { transform: 'translateX(0)' },

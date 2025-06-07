@@ -1,10 +1,10 @@
-import logo from "./Emmark.jpg";
+import logo from "./logo.png";
 import video from "./video.mp4";
 import cart_icon from "./cart_icon.png";
 import bin_icon from "./bin_icon.png";
 import dropdown_icon from "./dropdown_icon.png";
 import support_img from "./support_img.png";
-import menu_icon from "./menu_icon.png";
+import menu_icon from "./menu.png";
 import cross_icon from "./cross_icon.png";
 import aboutus from "./aboutus.png";
 import did from "./did.png";
@@ -22,9 +22,12 @@ import ourProduct from "./ourProduct.jpg";
 import clients from "./clients.jpg";
 import connect from "./connect.jpg";
 import team from "./team.jpg";
+import bg from "./bg2.jpg"
+import emmark from './Emmark.jpg'
 
 export const assets = {
   logo,
+  bg,
   cart_icon,
   dropdown_icon,
   bin_icon,
@@ -48,4 +51,5 @@ export const assets = {
   clients,
   connect,
   team,
+  emmark
 };

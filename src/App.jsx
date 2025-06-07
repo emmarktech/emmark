@@ -15,11 +15,15 @@ import Vision from './Pages/Vision'
 import Team from './Pages/Team'
 // import Patners from './Pages/Patners'
 
+import '@fontsource/inter'; // Defaults to weight 400
+import '@fontsource/inter/700.css'; // Optional for bold
+
+
 
 
 const App = () => {
   return (
-    <div  >
+    <div  className='font-sans'>
       <Navbar/>
       {/* <BrowserRouter> */}
       <Routes>
