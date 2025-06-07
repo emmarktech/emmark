@@ -110,7 +110,7 @@ const Products = () => {
       </motion.section>
 
       {/* ======= About Section ======= */}
-      <div className="bg-gradient-to-r from-gray-50 to-gray-100 px-4 sm:px-8 md:px-16 lg:px-24 py-16 text-lg">
+      <div className="bg-gradient-to-r from-gray-50 to-gray-100 px-4 sm:px-8 md:px-16 lg:px-24 py-16 text-md">
         <motion.section
           className="grid gap-12 md:grid-cols-2"
           variants={container}
@@ -157,7 +157,7 @@ const Products = () => {
           </motion.div>
         </motion.section>
 
-        <div className="grid gap-12 md:grid-cols-2 mt-5 max-w-7xl mx-auto text-justify">
+        <div className="grid gap-12 md:grid-cols-2 mt-1 max-w-7xl mx-auto text-justify">
           <div>
             <p>
               Our founding team brings a wealth of expertise across multiple
