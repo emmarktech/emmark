@@ -224,14 +224,14 @@ const Services = () => {
               {clientServices.map((service, index) => (
                 <motion.div
                   key={index}
-                  className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition"
+                  className="p-5 md:p-12 lg:p-12 bg-white rounded-2xl shadow-md hover:shadow-xl transition"
                   variants={item}
                 >
                   <div className="flex items-center gap-3 mb-5 text-blue-600 text-4xl">
                     {service.icon}
-                    <h4 className="text-2xl font-bold">{service.title}</h4>
+                    <h4 className="text-lg md:text-2xl font-bold">{service.title}</h4>
                   </div>
-                  <p className="text-lg font-semibold text-black">
+                  <p className="text-md md:text-lg font-semibold text-black">
                     {service.desc}
                   </p>
                 </motion.div>
@@ -251,14 +251,14 @@ const Services = () => {
               {trainingServices.map((service, index) => (
                 <motion.div
                   key={index}
-                  className="p-12 bg-white rounded-2xl shadow-md hover:shadow-xl transition"
+                  className="p-5 md:p-12 lg:p-12 bg-white rounded-2xl shadow-md hover:shadow-xl transition"
                   variants={item}
                 >
                   <div className="flex items-center gap-3 mb-5 text-blue-600 text-4xl">
                     {service.icon}
-                    <h4 className="text-2xl font-bold">{service.title}</h4>
+                    <h4 className="text-lg md:text-2xl font-bold">{service.title}</h4>
                   </div>
-                  <p className="text-lg font-semibold text-black">
+                  <p className="text-md md:text-lg font-semibold text-black">
                     {service.desc}
                   </p>
                 </motion.div>

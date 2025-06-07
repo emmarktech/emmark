@@ -58,7 +58,7 @@ const Products = () => {
 
         <div className="grid gap-12 md:grid-cols-2 pt-14">
           <motion.article
-            className="bg-white hover:bg-blue-100 p-12 rounded-xl  shadow-2xl transition-colors duration-300 hover:animate-shake"
+            className="bg-white hover:bg-blue-100 p-5 md:p-12 lg:p-12 rounded-xl  shadow-2xl transition-colors duration-300 hover:animate-shake"
             variants={item}
             // style={{ borderTop: "3px solid blue", borderLeft: "3px solid blue" }}
           >
@@ -83,7 +83,7 @@ const Products = () => {
           </motion.article>
 
           <motion.article
-            className="bg-white hover:bg-blue-100 p-12 rounded-xl shadow-2xl transition-colors duration-300 hover:animate-shake"
+            className="bg-white hover:bg-blue-100 p-5 md:p-12 lg:p-12 rounded-xl shadow-2xl transition-colors duration-300 hover:animate-shake"
             variants={item}
             // style={{ borderBottom: "3px solid blue", borderRight: "3px solid blue" }}
           >

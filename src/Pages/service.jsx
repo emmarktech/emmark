@@ -57,7 +57,7 @@ const Service = () => {
             <motion.div
               key={index}
               variants={cardVariants}
-              className="group bg-white text-gray-800 p-10 rounded-xl shadow-2xl transition-all duration-200 hover:shadow-4xl hover:scale-205 hover:border-blue-400 border border-transparent"
+              className="group bg-white text-gray-800 p-5 md:p-12 lg:p-12 rounded-xl shadow-2xl transition-all duration-200 hover:shadow-4xl hover:scale-205 hover:border-blue-400 border border-transparent"
             >
               <h3 className="text-xl font-bold mb-3 text-black group-hover:text-blue-600 transition duration-300">
                 {service.title}
@@ -75,7 +75,7 @@ const Service = () => {
     whileInView="visible"
     viewport={{ once: true }}
     transition={{ duration: 0.6 }}
-    className="group p-12 sm:p-10 bg-white  py-16 sm:py-10 text-center shadow-2xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] hover:border-blue-500 border border-transparent"
+    className="group p-5 md:p-12 lg:p-12 bg-white   text-center shadow-2xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] hover:border-blue-500 border border-transparent"
   >
     <h2 className="text-justify text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-snug transition-colors duration-300 group-hover:text-blue-700">
       Have an IT Solution Need? <br className="hidden sm:block" /> Look No Further — Emmark Tech Has You Covered.

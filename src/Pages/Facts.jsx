@@ -75,7 +75,7 @@ const DidYouKnow = () => {
             <motion.div
               key={index}
               variants={item}
-              className="bg-white rounded-xl shadow-2xl p-12 hover:animate-shake border-l-4 border-blue-600"
+              className="bg-white rounded-xl shadow-2xl p-5 md:p-12 lg:p-12 hover:animate-shake border-l-4 border-blue-600"
             >
               <p className="text-md font-semibold text-black">{fact}</p>
             </motion.div>
