@@ -32,10 +32,10 @@ const fadeInProps = {
 
 const Products = () => {
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg- text-gray-800">
       {/* ======= Why Choose Emmark-Tech Section ======= */}
       <motion.section
-        className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 bg-white"
+        className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 "
         variants={container}
         {...fadeInProps}
       >
@@ -58,7 +58,7 @@ const Products = () => {
 
         <div className="grid gap-12 md:grid-cols-2 pt-14">
           <motion.article
-            className="bg-white hover:bg-blue-100 p-5 md:p-12 lg:p-12 rounded-xl  shadow-2xl transition-colors duration-300 hover:animate-shake"
+            className="bg-white hover:bg-blue-100 p-5 md:p-12 lg:p-12 rounded-xl  shadow-2xl transition-colors duration-300 hover:animate-shake hover:shadow-4xl hover:scale-205 hover:border-blue-400 border border-transparent"
             variants={item}
             // style={{ borderTop: "3px solid blue", borderLeft: "3px solid blue" }}
           >
@@ -83,7 +83,7 @@ const Products = () => {
           </motion.article>
 
           <motion.article
-            className="bg-white hover:bg-blue-100 p-5 md:p-12 lg:p-12 rounded-xl shadow-2xl transition-colors duration-300 hover:animate-shake"
+            className="bg-white hover:bg-blue-100 p-5 md:p-12 lg:p-12 rounded-xl shadow-2xl transition-colors duration-300 hover:animate-shake hover:shadow-4xl hover:scale-205 hover:border-blue-400 border border-transparent"
             variants={item}
             // style={{ borderBottom: "3px solid blue", borderRight: "3px solid blue" }}
           >

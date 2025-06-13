@@ -24,12 +24,14 @@ import connect from "./connect.jpg";
 import team from "./team.jpg";
 import bg from "./bg2.jpg"
 import emmark from './Emmark.jpg'
+import profile_icon from './profile_icon.png'
 
 export const assets = {
   logo,
   bg,
   cart_icon,
   dropdown_icon,
+  profile_icon,
   bin_icon,
   support_img,
   menu_icon,

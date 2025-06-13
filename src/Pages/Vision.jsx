@@ -57,7 +57,7 @@ const Vision = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "80vh",
+    height: "90vh",
     position: "relative",
     display: "flex",
     alignItems: "center",

@@ -17,6 +17,9 @@ import Team from './Pages/Team'
 
 import '@fontsource/inter'; // Defaults to weight 400
 import '@fontsource/inter/700.css'; // Optional for bold
+import { ToastContainer } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
+// import Login from './Pages/Login'
 
 
 
@@ -24,10 +27,12 @@ import '@fontsource/inter/700.css'; // Optional for bold
 const App = () => {
   return (
     <div  className='font-sans'>
+      <ToastContainer/>
       <Navbar/>
       {/* <BrowserRouter> */}
       <Routes>
         <Route path='/' element={<Home/>}/>
+        {/* <Route path="/login" element={<Login />} /> */}
         <Route path='/about' element={<About/>}/>
         <Route path='/services' element={<Services/>}/>
         <Route path='/contact' element={<Contact/>}/>

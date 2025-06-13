@@ -16,7 +16,7 @@ import { assets } from "../asset/assets";
 
 const Footer = () => {
   return (
-    <footer className="bg-black mt-4 ">
+    <footer className="bg-black mt-16 ">
       <div className="flex flex-col sm:grid grid-cols-[2fr_1fr_1fr] gap-20 h-auto px-10 py-20">
         <div>
           <img

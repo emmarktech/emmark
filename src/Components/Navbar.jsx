@@ -1,11 +1,22 @@
 import React, { useContext, useState } from "react";
 import { Link, Navigate, NavLink, useLocation } from "react-router-dom";
 import { assets } from "../asset/assets";
+// import { ShopContext } from "../context/ShopContext";
 
 // import './style.css'
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
+
+  // const {getCartCount, navigate, token, setToken, setCartItems} = useContext(ShopContext)
+  // // console.log('Cart count:', getCartCount());
+
+  // const logout = () =>{
+  //   navigate('/login')
+  //   localStorage.removeItem('token')
+  //   setToken('')
+  //   setCartItems({})
+  // }
 
   const location = useLocation();
 const isAboutActive = ["/about", "/team", "/vision"].some(path =>
@@ -94,14 +105,29 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
           <li>CLIENTS</li>
           <hr className="w-2/4 border-none h-[1.5px] bg-white hidden" />
         </NavLink>
-        {/* <NavLink 
-            className='flex flex-col items-center text-gray-700  font-bold hover:text-blue-700 no-underline' 
-            style={{ textDecoration: 'none' }} 
-            to="/contact">
-            <p>CONTACT</p>
-            <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
-          </NavLink> */}
       </ul>
+
+      {/* <div className='flex items-center gap-6'>
+      <div className='group relative'>
+         <img onClick={()=> token ? null : navigate('/login')}  src={assets.profile_icon} className='w-10 cursor-pointer' alt='User Menu' />
+
+
+
+         {token &&  
+         <div className='absolute right-0 hidden group-hover:block bg-slate-100 rounded shadow-md py-3'>
+            <p onClick={()=>navigate('/orders')}  className='cursor-pointer hover:text-gray-400 py-1 px-4'>Orders</p>
+            <p onClick={logout} className='cursor-pointer hover:text-gray-400 py-1 px-4'>Logout</p>
+          </div>}
+
+        </div>
+        <Link to="/" className="relative inline-block">
+  <img src={assets.cart_icon} className="w-12 cursor-pointer" alt="Cart" />
+  <p className="absolute bottom-1 right-0 w-6 h-6 flex items-center justify-center bg-black text-white rounded-full text-[13px] font-bold">
+  {getCartCount()}
+  </p>
+</Link>
+
+      </div> */}
 
       <div className="AA flex items-center gap-6 ">
         <Link to="/contact" className="max-[900px]:hidden">

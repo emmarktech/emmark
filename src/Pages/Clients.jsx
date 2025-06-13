@@ -15,7 +15,7 @@ const Clients = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "80vh",
+    height: "90vh",
     position: "relative",
     display: "flex",
     alignItems: "center",
@@ -160,7 +160,7 @@ const Clients = () => {
             {/* <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
               Our Clients
             </h1> */}
-            <p className='py-10 text-gray-800 text-md font-semibold  px-4 sm:px-8 md:px-16 lg:px-24' style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
+            <p className='py-20 mb-10 text-gray-800 text-md font-semibold  px-4 sm:px-8 md:px-16 lg:px-24' style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
               For every of the mentioned industry sectors, we provide suiting tech solutions that make global impact through professional and proper implementation of skills.
 
              <p className='pt-10'> <Link to='/contact' className='font-bold text-xl text-blue-600 border rounded-xl p-2' style={{border:'1px solid '}}>Contact Us</Link>  today for a tech experience that lasts !</p>

@@ -27,7 +27,7 @@ const Contact = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "80vh",
+    height: "90vh",
     position: "relative",
     display: "flex",
     alignItems: "center",
@@ -87,7 +87,7 @@ const Contact = () => {
         {/* Hero Section */}
         <motion.div variants={fadeIn} initial="hidden" animate="show">
           <div
-            className="relative flex items-center justify-center h-[80vh] bg-cover bg-center bg-no-repeat text-white px-4"
+            className="relative flex items-center justify-center h-[90vh] bg-cover bg-center bg-no-repeat text-white px-4"
             style={{ backgroundImage: `url(${assets.connect})` }}
           >
             <div className="absolute inset-0 bg-black/60 z-0"></div>
@@ -97,12 +97,12 @@ const Contact = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <div className="flex justify-center gap-4 flex-wrap pt-5 text-white font-medium pb-20">
+              <div className="flex justify-center gap-4 flex-wrap pt-5 text-white font-medium pb-20 ">
                 <a
                   href="https://www.linkedin.com/company/emmarklabs/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 border rounded-xl py-3 px-6 bg-white/10 backdrop-blur-md transition"
+                  className="flex items-center gap-2 border rounded-xl py-3 px-6 bg-white/10 backdrop-blur-md transition hover:scale-205 hover:border-blue-400 "
                 >
                   <FaLinkedin size={20} /> LinkedIn
                 </a>
@@ -110,7 +110,7 @@ const Contact = () => {
                   href="https://github.com/emmarktech"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 border rounded-xl py-3 px-6 bg-white/10 backdrop-blur-md transition"
+                  className="flex items-center gap-2 border rounded-xl py-3 px-6 bg-white/10 backdrop-blur-md transition hover:scale-205 hover:border-blue-400 "
                 >
                   <FaGithub size={20} /> GitHub
                 </a>
@@ -118,7 +118,7 @@ const Contact = () => {
                   href="https://twitter.com/emmarktech"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 border rounded-xl py-3 px-6 bg-white/10 backdrop-blur-md transition"
+                  className="flex items-center gap-2 border rounded-xl py-3 px-6 bg-white/10 backdrop-blur-md transition hover:scale-205 hover:border-blue-400 "
                 >
                   <FaTwitter size={20} /> Twitter
                 </a>
