@@ -49,7 +49,7 @@ const item = {
 const DidYouKnow = () => {
   return (
     <div>
-    <div className="min-h-screen px-6 py-16 bg-gradient-to-br from-blue-50 to-white text-gray-800">
+    <div className="min-h-screen px-6 py-16 bg-gray-100 text-black">
       <motion.div
         variants={container}
         initial="hidden"
@@ -57,14 +57,14 @@ const DidYouKnow = () => {
         className="max-w-5xl mx-auto"
       >
         <motion.h1
-          className="text-4xl md:text-5xl font-extrabold text-center mb-10 text-blue-800"
+          className="text-4xl md:text-5xl font-extrabold text-center mb-10 text-black"
           variants={item}
         >
           Did You Know? 🤔💡
         </motion.h1>
 
         <motion.p
-          className="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto"
+          className="text-center text-lg font-bold text-gray-700 mb-12 max-w-3xl mx-auto"
           variants={item}
         >
           Here are some powerful tech facts to inspire your journey — whether you're growing a business or starting your tech career.
@@ -75,9 +75,9 @@ const DidYouKnow = () => {
             <motion.div
               key={index}
               variants={item}
-              className="bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-600"
+              className="bg-white rounded-xl shadow-2xl p-5 md:p-12 lg:p-12 hover:animate-shake border-l-4 border-blue-600"
             >
-              <p className="text-md font-medium text-gray-700">{fact}</p>
+              <p className="text-md font-semibold text-black">{fact}</p>
             </motion.div>
           ))}
         </div>

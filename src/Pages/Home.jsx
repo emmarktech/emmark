@@ -1,25 +1,21 @@
-import React from 'react'
-import Navbar from '../Components/Navbar'
-import Hero from './Hero'
-import Services from './Services'
-import Meet from './Meet'
-import People from './People'
-import Footer from '../Components/Footer'
-import Products from './Products'
-
+import React from "react";
+import People from "./People";
+import Footer from "../Components/Footer";
+import Products from "./Products";
+import Landing from "./Landing";
+import Service from "./service";
+import Newsletter from "./Newsletter";
 
 const Home = () => {
   return (
     <div>
-      <Hero/>
-      <Products/>
-      <Meet/>
+      <Landing />
+      <Products />
+      <Service />
       <People/>
-      
-      <Footer/>
-      {/* <Services/> */}
-
+      <Newsletter/>
+      <Footer />
     </div>
-  )
-}
-export default Home
+  );
+};
+export default Home;
