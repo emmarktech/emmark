@@ -224,7 +224,7 @@ const Services = () => {
               {clientServices.map((service, index) => (
                 <motion.div
                   key={index}
-                  className="p-5 md:p-12 lg:p-12 bg-white rounded-2xl shadow-md hover:shadow-xl transition"
+                  className="p-5 md:p-12 lg:p-12 bg-white rounded-2xl shadow-md hover:shadow-xl transition border border-transparent hover:border-blue-500"
                   variants={item}
                 >
                   <div className="flex items-center gap-3 mb-5 text-blue-600 text-4xl">
@@ -251,7 +251,7 @@ const Services = () => {
               {trainingServices.map((service, index) => (
                 <motion.div
                   key={index}
-                  className="p-5 md:p-12 lg:p-12 bg-white rounded-2xl shadow-md hover:shadow-xl transition"
+                  className="p-5 md:p-12 lg:p-12 bg-white rounded-2xl shadow-md hover:shadow-xl transition border border-transparent hover:border-blue-500"
                   variants={item}
                 >
                   <div className="flex items-center gap-3 mb-5 text-blue-600 text-4xl">

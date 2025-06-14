@@ -112,7 +112,7 @@ const Partners = () => {
             We proudly partner with:
           </h2>
           <motion.div
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -127,7 +127,7 @@ const Partners = () => {
             {companies.map((domain, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-xl shadow-md p-4 mb-5 flex items-center justify-center h-24"
+                className="bg-white rounded-xl shadow-md p-4 mb-5 flex items-center justify-center h-24 border border-transparent hover:border-blue-500"
                 title={domain.split(".")[0].toUpperCase()}
                 variants={{
                   hidden: { opacity: 0, scale: 0.8 },

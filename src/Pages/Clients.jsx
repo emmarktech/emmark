@@ -132,7 +132,7 @@ const Clients = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white text-gray-800 p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300"
+                className="bg-white text-gray-800 p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300 border border-transparent hover:border-blue-500"
               >
                 <div className="flex items-center gap-4 mb-4">
                   {sector.icon}

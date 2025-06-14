@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 // import { techLogos } from '../asset/assets';
 // import PartnersSlider from './Patners';
 
@@ -39,6 +40,13 @@ const services = [
 ];
 
 const Service = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/contact');
+  };
+
   return (
     <div className="py-20 px-4 sm:px-8 md:px-16 lg:px-24  text-white">
       <motion.div
@@ -84,12 +92,13 @@ const Service = () => {
       Whether you're a startup or an enterprise, we deliver scalable, world-class tech solutions to power your success across the globe.
     </p>
     <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-700 transition text-white font-semibold rounded-xl shadow-lg"
-            >
-             Let's Get Started
-            </motion.button>
+     onClick={() => navigate('/contact')}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-700 transition text-white font-semibold rounded-xl shadow-lg"
+    >
+      Let's Get Started
+    </motion.button>
   </motion.div>
 </div>
 
