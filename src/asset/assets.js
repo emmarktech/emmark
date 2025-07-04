@@ -17,7 +17,7 @@ import services from "./services.png";
 import home from "./home.png";
 import whatsapp from "./whatsapp.png";
 import About from "./About.jpg";
-import partners from "./partners.jpg";
+import partners from "./part.avif";
 import ourProduct from "./ourProduct.jpg";
 import clients from "./clients.jpg";
 import connect from "./connect.jpg";
@@ -25,6 +25,12 @@ import team from "./team.jpg";
 import bg from "./bg2.jpg"
 import emmark from './Emmark.jpg'
 import profile_icon from './profile_icon.png'
+import send from './send-icon.png'
+import elion from './elionphones-frontend.jpg'
+import dochub from './doctor-hub.jpg'
+import graphics from './graphics.jpg'
+import portfolio from './portfolio.jpg'
+import multi from './multiVendor.jpg'
 
 export const assets = {
   logo,
@@ -53,5 +59,7 @@ export const assets = {
   clients,
   connect,
   team,
-  emmark
+  emmark,
+  send,portfolio,
+  elion,dochub,graphics,multi
 };

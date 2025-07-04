@@ -74,6 +74,34 @@ const coreValues = [
   },
 ];
 
+const visionPoints = [
+  {
+    title: "Empowering Innovation Globally",
+    description:
+      "Our vision is to drive innovation across industries by delivering cutting-edge technology solutions that reshape the way businesses operate, communicate, and grow around the world.",
+  },
+  {
+    title: "Inspiring the Next Generation",
+    description:
+      "We envision a world where every aspiring tech mind—regardless of background—has access to mentorship, tools, and opportunities to transform their passion into global impact.",
+  },
+  {
+    title: "Building Scalable Tech for Tomorrow",
+    description:
+      "Our solutions are not just built for today. We are laying down the foundation for future-ready, scalable, and sustainable technologies that evolve with global market demands.",
+  },
+  {
+    title: "Redefining Excellence in Tech Consulting",
+    description:
+      "We aspire to be the gold standard in tech consulting by consistently delivering outstanding value, reliability, and innovation in every client interaction.",
+  },
+  {
+    title: "Championing Integrity & Collaboration",
+    description:
+      "We foster a culture of trust, inclusivity, and collaboration — within our teams and with our partners — to drive ethical and effective digital transformation globally.",
+  },
+];
+
 const About = () => {
   const sectionStyle = {
     backgroundImage: `url(${assets.About})`,
@@ -162,7 +190,7 @@ const About = () => {
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="group bg-white text-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition-all border border-gray-100 hover:border-blue-400"
+                className="group bg-white text-gray-800 p-6 rounded-2xl shadow-md hover:shadow-[0_2px_35px_blue] hover:scale-105 transition-all border border-gray-100 hover:border-blue-400"
               >
                 <h3 className="text-xl font-bold mb-3 group-hover:text-blue-600 transition duration-300">
                   {service.title}
@@ -191,13 +219,42 @@ const About = () => {
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="group bg-white text-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition-all border border-gray-100 hover:border-blue-400"
+                className="group bg-white text-gray-800 p-6 rounded-2xl shadow-md hover:shadow-[0_2px_35px_blue] hover:scale-105 transition-all border border-gray-100 hover:border-blue-400"
               >
                 <h3 className="text-xl font-bold mb-3 group-hover:text-blue-600 transition duration-300">
                   {value.title}
                 </h3>
                 <p className="text-gray-700 font-medium leading-relaxed">
                   {value.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+                {/* Vision Points */}
+        <motion.div
+          className="mt-20 px-4 sm:px-8 md:px-16 lg:px-24"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-black text-center">
+            What Drives <span className="text-blue-600">Our Vision</span>
+          </h2>
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            {visionPoints.map((point, index) => (
+              <motion.div
+                key={index}
+                variants={cardVariants}
+                className="group bg-white text-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-[0_2px_35px_blue] hover:scale-105 transition-all border border-transparent hover:border-blue-500"
+              >
+                <h3 className="text-xl font-bold mb-3 group-hover:text-blue-600 transition duration-300">
+                  {point.title}
+                </h3>
+                <p className="text-gray-700 font-medium leading-relaxed">
+                  {point.description}
                 </p>
               </motion.div>
             ))}

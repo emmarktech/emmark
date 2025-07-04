@@ -14,7 +14,6 @@ import Facts from './Pages/Facts';
 import Products from './Pages/Products';
 import Clients from './Pages/Clients';
 import Partners from './Pages/Partners';
-import Vision from './Pages/Vision';
 import Team from './Pages/Team';
 
 // Components
@@ -26,6 +25,8 @@ import '@fontsource/inter/700.css';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import './App.css';
+import OurPortFolio from './Pages/ourPortFolio';
+import ScrollToTop from './Pages/scrollToTop';
 
 // ✅ Google Analytics listener
 const GAListener = () => {
@@ -44,6 +45,7 @@ const App = () => {
       <ToastContainer />
         <GAListener />
         <Navbar />
+        <ScrollToTop/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
@@ -54,7 +56,7 @@ const App = () => {
           <Route path='/products' element={<Products />} />
           <Route path='/clients' element={<Clients />} />
           <Route path='/partners' element={<Partners />} />
-          <Route path='/vision' element={<Vision />} />
+          <Route path='/portfolio' element={<OurPortFolio/>}/>
           <Route path='/team' element={<Team />} />
         </Routes>
     </div>

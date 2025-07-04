@@ -43,7 +43,7 @@ const Products = () => {
           className="text-2xl sm:text-3xl font-bold text-center mb-6 leading-tight text-black"
           variants={item}
         >
-          Why Choose Emmark-Tech?
+          Why Choose Emmark-<span className="text-blue-600">Tech</span> ?
         </motion.h2>
 
         <motion.p
@@ -58,7 +58,7 @@ const Products = () => {
 
         <div className="grid gap-12 md:grid-cols-2 pt-14">
           <motion.article
-            className="bg-white hover:bg-blue-100 p-5 md:p-12 lg:p-12 rounded-xl  shadow-2xl transition-colors duration-300 hover:animate-shake hover:shadow-4xl hover:scale-205 hover:border-blue-400 border border-transparent"
+            className="bg-white p-5 md:p-12 lg:p-12 rounded-xl  shadow-2xl transition-colors duration-300 hover:animate-shake hover:shadow-[0_2px_35px_blue] hover:scale-205 hover:border-blue-400 border border-transparent"
             variants={item}
             // style={{ borderTop: "3px solid blue", borderLeft: "3px solid blue" }}
           >
@@ -83,7 +83,7 @@ const Products = () => {
           </motion.article>
 
           <motion.article
-            className="bg-white hover:bg-blue-100 p-5 md:p-12 lg:p-12 rounded-xl shadow-2xl transition-colors duration-300 hover:animate-shake hover:shadow-4xl hover:scale-205 hover:border-blue-400 border border-transparent"
+            className="bg-white p-5 md:p-12 lg:p-12 rounded-xl shadow-2xl transition-colors duration-300 hover:animate-shake hover:shadow-[0_2px_35px_blue] hover:scale-205 hover:border-blue-400 border border-transparent"
             variants={item}
             // style={{ borderBottom: "3px solid blue", borderRight: "3px solid blue" }}
           >
@@ -110,88 +110,40 @@ const Products = () => {
       </motion.section>
 
       {/* ======= About Section ======= */}
-      <div className="bg-gradient-to-r from-gray-50 to-gray-100 px-4 sm:px-8 md:px-16 lg:px-24 py-16 text-md">
-        <motion.section
-          className="grid gap-12 md:grid-cols-2"
-          variants={container}
-          {...fadeInProps}
-        >
-          <motion.div variants={item}>
-            <h2 className="text-3xl font-bold mb-3 text-black">
-              About Emmark Tech
-            </h2>
-            <div
-              className="rounded-xl p-2"
-              style={{ borderLeft: "3px solid black" }}
-            >
-              {/* <p className="mb-4">
-                Welcome to Emmark Tech — your all-in-one hub for modern digital
-                solutions, innovation, and technology training.
-              </p> */}
-              <p>
-                We are a fast rising tech force in Africa with a global mindset,
-                aiming to build digital products that matter and develop talents
-                that shape the future. We are committed to bridging the global
-                digital divide by providing scalable software, robust IT
-                infrastructure, and hands-on tech training programs. Our mission
-                is to empower individuals, startups, and enterprises through
-                technology that transforms businesses and careers.
-                <br />
-                With a visionary team of professionals, we deliver end-to-end
-                tech services including software development, cloud integration,
-                IT consulting, product engineering, and full-stack training. Our
-                approach is simple — deliver real results with innovation,
-                integrity, and impact.
-              </p>
-            </div>
-          </motion.div>
+     <div className="bg-white px-4 sm:px-8 md:px-16 lg:px-24 py-16 text-gray-800">
+  <div className="grid gap-12 md:grid-cols-2 items-center">
+    <img
+      src={assets.About} // Replace with a more professional image suggestion below
+      alt="Team working on tech"
+      className="w-full h-full max-h-[400px] object-cover rounded-2xl shadow-md"
+    />
 
-          <motion.div variants={item}>
-            <img
-              src={assets.About}
-              alt="About Emmark Tech"
-              className="w-full h-full max-h-[400px] object-cover rounded-2xl shadow-lg"
-              loading="lazy"
-              style={{ borderTop: "8px solid white" }}
-            />
-          </motion.div>
-        </motion.section>
+    <div>
+      <h2 className="text-3xl font-bold mb-4 text-black">About Emmark-<span className="text-blue-600">Tech</span></h2>
+      <p className="mb-4 leading-relaxed">
+        Emmark Tech is an African-rooted, globally focused technology company
+        committed to building digital solutions and training future tech leaders.
+        We develop scalable software, provide enterprise IT services, and deliver
+        hands-on tech education that transforms lives and businesses.
+      </p>
+      <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+        <li>Custom software for startups and enterprises</li>
+        <li>Cloud & IT infrastructure solutions</li>
+        <li>Web and mobile development</li>
+        <li>Tech training & mentorship programs</li>
+        <li>Creative design and branding services</li>
+      </ul>
+    </div>
+  </div>
 
-        <div className="grid gap-12 md:grid-cols-2 mt-1 max-w-7xl mx-auto text-justify">
-          <div>
-            <p>
-              Our founding team brings a wealth of expertise across multiple
-              disciplines including software engineering, cybersecurity, cloud
-              computing, UI/UX design, business development, and more. We don't
-              just build digital tools — we create experiences, streamline
-              systems, and inspire innovation.
-              <br />
-              <br />
-              Whether you’re an aspiring tech talent or a growing business,
-              Emmark Tech provides the right tools, training, and solutions to
-              help you thrive in today's fast-evolving tech world.
-            </p>
-          </div>
+  <div className="mt-12 max-w-3xl mx-auto text-center">
+    <p className="text-lg font-medium">
+      At Emmark Tech, we don’t just build tools — we shape careers, grow businesses,
+      and connect people through meaningful technology.
+    </p>
+  </div>
+</div>
 
-          <div className="flex-1 rounded-lg transition-all duration-300 text-gray-700">
-            <ul className="list-disc list-inside space-y-2">
-              <li>Gain hands-on, job-ready skills with real-world projects.</li>
-              <li>
-                Work with a forward-thinking team passionate about tech
-                innovation.
-              </li>
-              <li>
-                Access custom-built software solutions tailored to your business
-                goals.
-              </li>
-              <li>Join a community of global learners and digital creators.</li>
-              <li>
-                Future-proof your skills and solutions in a tech-driven economy.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

@@ -150,14 +150,14 @@ const Services = () => {
     left: 0,
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    backgroundColor: "rgba(0, 0, 3, 0.6)",
     zIndex: 1,
   };
 
   const contentStyle = {
     position: "relative",
     zIndex: 2,
-    textAlign: "justify",
+    textAlign: "center",
     maxWidth: "800px",
   };
 
@@ -177,26 +177,14 @@ const Services = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1 }}
           >
-            <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
+            <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
               Our Products
             </h1>
-            <h2
-              className="font-bold text-white leading-relaxed"
-              style={{ fontSize: "1.1rem", lineHeight: "1.6" }}
+            <p
+              className="text-lg sm:text-xl font-medium text-gray-200"
             >
               At <span className="text-blue-400">Emmark-Tech</span>, we
-              prioritize our customers' needs
-              <br />
-              and are committed to delivering exceptional services tailored to
-              their goals.
-            </h2>
-            <p
-              className="font-medium text-white leading-relaxed pt-3"
-              style={{ fontSize: "1.1rem", lineHeight: "1.6" }}
-            >
-              We offer comprehensive tech solutions and services for Businesses,
-              <br />
-              Firms, and Organizations across various industries.
+              prioritize our customers' needs. We offer comprehensive tech solutions and services for Businesses,Firms, and Organizations across various industries.
             </p>
             <p className="text-md font-medium leading-relaxed pt-10">
               We build global solutions, empower tech minds, and transform
@@ -224,7 +212,7 @@ const Services = () => {
               {clientServices.map((service, index) => (
                 <motion.div
                   key={index}
-                  className="p-5 md:p-12 lg:p-12 bg-white rounded-2xl shadow-md hover:shadow-xl transition border border-transparent hover:border-blue-500"
+                  className="p-5 md:p-12 lg:p-12 bg-white rounded-2xl shadow-md hover:shadow-[0_2px_35px_blue] transition border border-transparent hover:border-blue-500"
                   variants={item}
                 >
                   <div className="flex items-center gap-3 mb-5 text-blue-600 text-4xl">
@@ -251,7 +239,7 @@ const Services = () => {
               {trainingServices.map((service, index) => (
                 <motion.div
                   key={index}
-                  className="p-5 md:p-12 lg:p-12 bg-white rounded-2xl shadow-md hover:shadow-xl transition border border-transparent hover:border-blue-500"
+                  className="p-5 md:p-12 lg:p-12 bg-white rounded-2xl shadow-md hover:shadow-[0_2px_35px_blue] transition border border-transparent hover:border-blue-500"
                   variants={item}
                 >
                   <div className="flex items-center gap-3 mb-5 text-blue-600 text-4xl">

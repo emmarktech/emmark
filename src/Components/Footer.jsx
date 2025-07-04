@@ -16,7 +16,7 @@ import { assets } from "../asset/assets";
 
 const Footer = () => {
   return (
-    <footer className="bg-black mt-16 ">
+    <footer className="bg-gray-500 mt-16 ">
       <div className="flex flex-col sm:grid grid-cols-[2fr_1fr_1fr] gap-20 h-auto px-10 py-20">
         <div>
           <img
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col justify-center">
-          <p className="text-3xl font-medium mb-5 text-white">COMPANY</p>
+          <p className="text-3xl font-medium mb-5 text-white font">Company</p>
           <ul className="flex flex-col gap-1 text-white">
             <li>
               <Link to={"/"} className="flex gap-2 mb-2 font-medium">
@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col justify-center">
-          <p className="text-3xl font-medium mb-5 text-white ">Get In Touch</p>
+          <p className="text-3xl font-medium mb-5 text-white font">Get In Touch</p>
           <ul className="flex flex-col gap-1 text-white">
             <li>
               <a

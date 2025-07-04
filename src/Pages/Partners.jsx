@@ -32,7 +32,7 @@ const Partners = () => {
   const contentStyle = {
     position: "relative",
     zIndex: 2,
-    textAlign: "justify",
+    textAlign: "center",
     maxWidth: "800px",
   };
 

@@ -19,13 +19,13 @@ const Navbar = () => {
   // }
 
   const location = useLocation();
-const isAboutActive = ["/about", "/team", "/vision"].some(path =>
+const isAboutActive = ["/about", "/team"].some(path =>
   location.pathname.startsWith(path)
 );
 
 
   return (
-    <div className="flex items-center justify-between py-4 font-medium relative z-50  px-4 sm:px-[5vw] md:px-[7vw] lg:px-[3vw] sticky top-0 bg-black shadow-md">
+    <div className="flex items-center justify-between py-4 font-medium relative z-50  px-4 sm:px-[vw] md:px-[7vw] lg:px-[3vw] sticky top-0 bg-black shadow-md">
       <Link to="/">
         <img src={assets.logo} className="w-full h-10" alt="Company Logo" />
       </Link>
@@ -47,7 +47,7 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
   }`}
 >
   <NavLink className="group relative">
-    <NavLink>ABOUT <span className=" text-sm">+</span></NavLink>
+    <NavLink>ABOUT US</NavLink>
 
     {/* Dropdown */}
     <div
@@ -65,9 +65,6 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
         Our Team
       </NavLink>
       <hr />
-      <NavLink to="/vision" className="cursor-pointer hover:text-blue-600 text-black py-1 px-1">
-        Our Vision
-      </NavLink>
     </div>
   </NavLink>
 
@@ -170,7 +167,7 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
           >
             HOME
           </NavLink>
-          <hr className="w-[90%] m-auto " />
+          {/* <hr className="w-[90%] m-auto " /> */}
           <NavLink
             onClick={() => setVisible(false)}
             to="/about"
@@ -178,15 +175,7 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
           >
             ABOUT US
           </NavLink>
-          <hr className="w-[90%] m-auto " />
-          <NavLink
-            onClick={() => setVisible(false)}
-            to="/vision"
-            className="p-4 hover:bg-gray-100 font-bold hover:text-blue-700"
-          >
-            OUR VISION
-          </NavLink>
-          <hr className="w-[90%] m-auto " />
+          {/* <hr className="w-[90%] m-auto " /> */}
           <NavLink
             onClick={() => setVisible(false)}
             to="/team"
@@ -194,7 +183,7 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
           >
             OUR TEAM
           </NavLink>
-          <hr className="w-[90%] m-auto " />
+          {/* <hr className="w-[90%] m-auto " /> */}
           <NavLink
             onClick={() => setVisible(false)}
             to="/services"
@@ -202,7 +191,13 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
           >
             PRODUCTS & SERVICES
           </NavLink>
-          <hr className="w-[90%] m-auto " />
+          <NavLink
+            onClick={() => setVisible(false)}
+            to="/portfolio"
+            className="p-4 hover:bg-gray-100 font-bold hover:text-blue-700"
+          >
+            Our Portfolio
+          </NavLink>
           <NavLink
             onClick={() => setVisible(false)}
             to="/partners"
@@ -210,7 +205,7 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
           >
             PARTNERS
           </NavLink>
-          <hr className="w-[90%] m-auto " />
+          {/* <hr className="w-[90%] m-auto " /> */}
           <NavLink
             onClick={() => setVisible(false)}
             to="/clients"
@@ -218,7 +213,7 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
           >
             CLIENTS
           </NavLink>
-          <hr className="w-[90%] m-auto " />
+          {/* <hr className="w-[90%] m-auto " /> */}
           <NavLink
             onClick={() => setVisible(false)}
             to="/contact"
@@ -226,7 +221,7 @@ const isAboutActive = ["/about", "/team", "/vision"].some(path =>
           >
             CONTACT
           </NavLink>
-          <hr className="w-[90%] m-auto " />
+          {/* <hr className="w-[90%] m-auto " /> */}
         </ul>
       </div>
     </div>
