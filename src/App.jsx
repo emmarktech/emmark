@@ -26,7 +26,7 @@ import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import './App.css';
 import OurPortFolio from './Pages/OurPortFolio';
-import ScrollToTop from './Pages/scrollToTop';
+import ScrollToTop from './Pages/ScrollToTop';
 
 // ✅ Google Analytics listener
 const GAListener = () => {
