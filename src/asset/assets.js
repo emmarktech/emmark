@@ -17,7 +17,7 @@ import services from "./services.png";
 import home from "./home.png";
 import whatsapp from "./whatsapp.png";
 import About from "./About.jpg";
-import partners from "./part.avif";
+import partners from "./partners.jpg";
 import ourProduct from "./ourProduct.jpg";
 import clients from "./clients.jpg";
 import connect from "./connect.jpg";
@@ -29,7 +29,7 @@ import send from './send-icon.png'
 import elion from './elionphones-frontend.jpg'
 import dochub from './doctor-hub.jpg'
 import graphics from './graphics.jpg'
-import portfolio from './portfolio.jpg'
+import portfolio from './Portfolio.jpg'
 import multi from './multiVendor.jpg'
 
 export const assets = {
