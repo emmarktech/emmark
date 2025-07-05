@@ -7,7 +7,7 @@ const Landing = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative w-full h-[70vh] sm:h-[100vh] md:h-screen overflow-hidden z-[1]">
+    <div className="relative w-full h-[90vh] sm:h-[100vh] md:h-screen overflow-hidden z-[1]">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -21,7 +21,7 @@ const Landing = () => {
       </video>
 
       {/* Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full  z-10" />
+      <div className="absolute top-0 left-0 w-full h-full z-10" />
 
       {/* Foreground Content */}
       <motion.div
